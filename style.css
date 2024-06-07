@@ -1,0 +1,468 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Romaunt";
+    src: url('fonts/RomauntGaolines.ttf');
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+:root {
+    --cor1: #f2f2f2;
+    --cor2: #d9d9d9;
+    --cor3: #8c8c8c;
+    --cor4: #262626;
+    --cor5: #0d0d0d;
+
+    --titulo-1: "Romaunt", 'Times New Roman', Times, serif;
+    --texto-2: 'CaviarDreams', Arial, Helvetica, sans-serif;
+    --salvador: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* Estilizando a barra de rolagem completa */
+::-webkit-scrollbar {
+    width: 12px;  /* Largura da barra de rolagem vertical */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estilizando a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Cor de fundo da trilha */
+    border-radius: 10px;
+}
+
+/* Estilizando a peça da trilha */
+::-webkit-scrollbar-track-piece {
+    background: #f9f9f9;
+}
+
+/* Estilizando o thumb da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #888;  /* Cor do thumb */
+    border-radius: 10px; /* Borda arredondada do thumb */
+}
+
+/* Estilizando o thumb ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor do thumb ao passar o mouse */
+}
+
+/* Estilizando o canto da barra de rolagem */
+::-webkit-scrollbar-corner {
+    background: #999; /* Cor do canto */
+}
+
+/* Estilizando o resizer da barra de rolagem */
+::-webkit-scrollbar-resizer {
+    background: #666; /* Cor do resizer */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0px 100px;
+
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: var(--salvador);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 0.6em;
+    padding: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 200px 100px;
+}
+
+.criador {
+    color: white;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    
+    padding: 10px;
+}
+
+.criador:hover {
+    box-shadow: 0px 2px 0px white;
+}
+
+.introvertido-container {
+    background-image: url('images/wallpaper3.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.introvertido {
+    color: rgb(255, 255, 255);
+    font-family: var(--titulo-1);
+    font-size: 11.5em;
+    text-align: center;
+    margin: 130px 0px -20px 0px;
+}
+
+.introvertido-especial {
+    font-size: 1em;                 
+    font-weight: bold;               
+    color: transparent;              
+    -webkit-text-stroke-width: 0.1px;  
+    -webkit-text-stroke-color: var(--cor3);
+    transition-duration: 0.2s;
+    
+}
+
+.introvertido-especial:hover {
+    color: var(--cor3);
+    -webkit-text-stroke-width: 0px;  
+}
+
+.introvertido-description {
+    color: white;
+    font-family: var(--texto-2);
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 800px;
+    margin: 0px 200px 400px 200px;
+}
+
+#primeiro {
+    font-family: var(--salvador);
+    text-align: center;
+    font-size: 3.9em;
+    color: var(--cor4);
+    margin-bottom: 30px;
+}
+
+.introvertidos {
+    background-color: var(--cor3);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#primeiro::first-letter {
+    color: black;
+}
+
+.titulo {
+    font-family: var(--salvador);
+    font-size: 2.3em;
+    color: var(--cor4);
+    margin-bottom: 30px;
+}
+
+.titulo::first-letter {
+    font-size: 2em;
+}
+
+.texto {
+    margin-bottom: 80px;
+}
+
+.caracteristicas-container {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 949px;
+
+    margin-bottom: 80px;
+
+}
+
+.left {
+    
+    text-align: left;
+    background-color: var(--cor2);
+    box-shadow: 5px 5px 0px black;
+
+    width: 450px;
+    padding: 30px;
+
+}
+
+.right {
+    text-align: right;
+    background-color: var(--cor4);
+    color: white;
+    box-shadow: 5px 5px 0px black;
+
+    width: 450px;
+    padding: 30px;
+}
+
+.introversao-imagem {
+
+    border: 1px solid black;
+    width: 250px;
+
+}
+
+.banner-1 {
+    display: flex;
+    justify-content: center;
+    
+    height: 300px;
+    width: 1350px;
+    
+    margin: 40px 0px 100px;
+
+}
+
+.lista {
+    padding: 0px 80px;
+}
+.lista>li {
+    
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.lista>li::marker {
+    content: '\1F517';
+}
+
+.diferenca-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    margin-bottom: 80px;
+}
+
+.animes {
+    filter: grayscale(100%);
+    border: 1px solid black;
+
+    width: 300px;
+
+}
+.animes-conclusion {
+    width: 200px;
+}
+.diferenca {
+    width: 400px;
+    padding: 0px;
+}
+
+.beleza {
+    margin: 50px 0px 80px;
+    filter: grayscale(100%);
+    border: 1px solid black;
+
+    width: 750px;
+}
+
+aside {
+    background-color:var(--cor3);
+    border: 1px solid black;
+    text-align: center;
+
+    width: 500px;
+    padding: 10px 20px;
+    margin: 0px 100px 100px;
+}
+.outros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    margin: 30px 0px 40px;
+}
+
+.outros {
+    list-style: none;
+}
+
+.outros a {
+    color: white;
+}
+
+.outros abbr {
+    text-decoration: none;
+}
+
+abbr {
+    position: relative;
+    cursor: help;
+}
+
+abbr::after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    background: var(--cor2);
+    color: #0d0d0d;
+    font-weight: bold;
+    padding: 50px;
+    border: 1px solid black;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+abbr:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.conclusao {
+    font-size: 3.5em;
+    
+    margin-bottom: 30px;
+}
+
+.conclusao::before {
+    content: '\261D';
+    filter: grayscale(100%) saturate(100%) brightness(70%);
+}
+
+hr {
+    background-color: transparent;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.397);
+    height: 1px;
+    width: 1000px;
+}
+.perguntas-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    margin: 0px 200px;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 20px 0px 0px;
+}
+
+.perguntas-container p {
+    padding: 0px;
+}
+
+.comentario {
+    background-color: var(--cor2);
+    box-shadow: 0px 2px 0px black;
+    border: 1px solid black;
+    
+    width: 600px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.users {
+    font-weight: bold;
+}
+
+i {
+    font-weight: 500;
+}
+
+footer {
+    text-decoration: none;
+    background-color: var(--cor3);
+    border: 1px solid black;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--cor2);
+    padding: 40px 100px;
+    margin-top: 80px;
+}
+
+.footer-section {
+    text-align: left; /* Adicionado para garantir alinhamento à esquerda */
+}
+
+.titulinhos {
+    margin-bottom: 30px;
+    text-align: left; /* Adicionado para garantir que o texto esteja alinhado à esquerda */
+}
+
+.footer img {
+    width: 30px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex; /* Para alinhar ícone e texto */
+    align-items: center; /* Para centralizar verticalmente ícone e texto */
+}
+
+.footer-section ul li img {
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
