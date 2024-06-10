@@ -75,7 +75,7 @@ p {
     font-size: 1.1em;
     text-align: justify;
     margin-top: 10px;
-    padding: 0px 100px;
+    
 
 }
 
@@ -92,13 +92,7 @@ header {
     color: rgb(255, 255, 255);
     font-size: 0.6em;
     padding: 20px;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 200px 100px;
+    margin: auto;
 }
 
 .criador {
@@ -113,6 +107,13 @@ article {
 
 .criador:hover {
     box-shadow: 0px 2px 0px white;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 200px 100px;
 }
 
 .introvertido-container {
@@ -130,9 +131,9 @@ article {
 .introvertido {
     color: rgb(255, 255, 255);
     font-family: var(--titulo-1);
-    font-size: 11.5em;
+    font-size: 11em;
     text-align: center;
-    margin: 130px 0px -20px 0px;
+    margin: 130px auto -20px;
 }
 
 .introvertido-especial {
@@ -153,10 +154,10 @@ article {
 .introvertido-description {
     color: white;
     font-family: var(--texto-2);
+    text-align: center;
     font-weight: bold;
     font-size: 1.1em;
-    width: 800px;
-    margin: 0px 200px 400px 200px;
+    margin: 0px auto 400px;
 }
 
 #primeiro {
@@ -164,6 +165,7 @@ article {
     text-align: center;
     font-size: 3.9em;
     color: var(--cor4);
+
     margin-bottom: 30px;
 }
 
@@ -191,6 +193,8 @@ article {
 }
 
 .texto {
+    width: 100%;
+    max-width: 754px;
     margin-bottom: 80px;
 }
 
@@ -207,8 +211,9 @@ article {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: 949px;
 
+    width: 100%;
+    max-width: 949;
     margin-bottom: 80px;
 
 }
@@ -246,7 +251,8 @@ article {
     justify-content: center;
     
     height: 300px;
-    width: 1350px;
+    width: 100%;
+    ma
     
     margin: 40px 0px 100px;
 
