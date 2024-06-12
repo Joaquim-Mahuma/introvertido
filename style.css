@@ -67,7 +67,7 @@
 
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -76,7 +76,6 @@ p {
     text-align: justify;
     margin-top: 10px;
     
-
 }
 
 body {
@@ -85,47 +84,20 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     background-color: black;
     color: rgb(255, 255, 255);
     font-size: 0.6em;
     padding: 20px;
-    margin: auto;
 }
 
-.criador {
-    color: white;
-    font-size: 1.9em;
-    font-weight: bold;
-    text-decoration: none;
-    transition-duration: 0.3s;
-    
-    padding: 10px;
-}
-
-.criador:hover {
-    box-shadow: 0px 2px 0px white;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 200px 100px;
-}
 
 .introvertido-container {
     background-image: url('images/wallpaper3.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-repeat: repeat;
 
-    
+    padding: 160px 20px 147px;
+    margin-bottom: 100px;
 }
 
 .introvertido {
@@ -133,7 +105,6 @@ article {
     font-family: var(--titulo-1);
     font-size: 11em;
     text-align: center;
-    margin: 130px auto -20px;
 }
 
 .introvertido-especial {
@@ -157,7 +128,13 @@ article {
     text-align: center;
     font-weight: bold;
     font-size: 1.1em;
-    margin: 0px auto 400px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 #primeiro {
@@ -202,6 +179,7 @@ article {
     display: flex;
     align-items: center;
 
+    max-width: 949px;
     margin-bottom: 80px;
 }
 
@@ -213,7 +191,7 @@ article {
     gap: 30px;
 
     width: 100%;
-    max-width: 949;
+    max-width: 949px;
     margin-bottom: 80px;
 
 }
@@ -252,7 +230,6 @@ article {
     
     height: 300px;
     width: 100%;
-    ma
     
     margin: 40px 0px 100px;
 
@@ -279,6 +256,7 @@ article {
     justify-content: center;
     gap: 50px;
 
+    max-width: 949px;
     margin-bottom: 80px;
 }
 
