@@ -74,7 +74,6 @@
 
 p {
     font-size: 1.1em;
-    text-align: justify;
     margin-top: 10px;
     
 }
@@ -99,13 +98,13 @@ header {
 
     padding-top: 100px;
     padding-bottom: 210px;
-    margin-bottom: 100px;
+    margin: 0px auto 100px;
 }
 
 .introvertido {
     color: rgb(255, 255, 255);
     font-family: var(--titulo-1);
-    font-size: 11rem;
+    font-size: 13vw;
     
     text-align: center;
 }
@@ -114,7 +113,7 @@ header {
     font-size: 1em;                 
     font-weight: bold;               
     color: transparent;              
-    -webkit-text-stroke-width: 0.1px;  
+    -webkit-text-stroke-width: 1px;  
     -webkit-text-stroke-color: var(--cor3);
     transition-duration: 0.2s;
     
@@ -133,12 +132,16 @@ header {
     font-size: 1.1em;
 }
 
-
+#content {
+    max-width: 1000px;
+    padding: 10px;
+    margin: auto;
+}
 
 #primeiro {
     font-family: var(--salvador);
     text-align: center;
-    font-size: 3.9em;
+    font-size: 2.5em;
     color: var(--cor4);
 
     margin-bottom: 30px;
@@ -171,6 +174,7 @@ header {
 
 .texto {
     width: 100%;
+    margin: auto;
     max-width: 754px;
     
 }
@@ -185,12 +189,13 @@ header {
 
     width: 100%;
     max-width: 949px;
-    margin-bottom: 80px;
+    margin: 0px auto 80px;
 
 }
 
 .caracteristicas-container {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
@@ -246,8 +251,9 @@ header {
 }
 
 .diferenca-container {
-    max-width: 949px;
-    margin-bottom: 80px;
+    
+    
+    margin: 0px auto 80px;
 }
 
 .diferenca-3 {
@@ -261,6 +267,7 @@ header {
 
 .diferenca-4 {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -284,12 +291,12 @@ header {
 }
 
 .beleza {
-    margin: 50px 0px 80px;
+    margin: 50px auto 80px;
     filter: grayscale(100%);
     border: 1px solid black;
 
-    width: 90%;
-    max-width: 949px;
+    width: 100%;
+    
 }
 
 aside {
@@ -300,7 +307,7 @@ aside {
     width: 80%;
     max-width: 600px;
     padding: 10px 20px;
-    margin: 0px 0px 100px;
+    margin: 0px auto 100px;
 }
 .outros {
     display: flex;
@@ -328,24 +335,6 @@ aside {
 abbr {
     position: relative;
     cursor: help;
-}
-
-abbr::after {
-    content: attr(title);
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    background: var(--cor2);
-    color: #0d0d0d;
-    font-weight: bold;
-    padding: 50px;
-    border: 1px solid black;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-5px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 1;
 }
 
 abbr:hover::after {
@@ -378,11 +367,12 @@ hr {
     width: 90%;
 }
 .perguntas-container {
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    
     max-width: 700px;
 
     width: 90%;
@@ -392,7 +382,14 @@ hr {
 h3 {
     text-align: center;
     font-size: 1.1em;
-    margin: 20px 0px 0px;
+    margin: 20px 0px;
+}
+
+#perguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .perguntas-container p {
@@ -453,21 +450,23 @@ footer {
 }
 
 .footer-section ul {
+    
     list-style-type: none;
     padding: 0;
 }
 
 .footer-section ul li {
     margin-bottom: 10px;
-    display: flex; /* Para alinhar ícone e texto */
-    align-items: center; /* Para centralizar verticalmente ícone e texto */
+    display: flex; 
+    align-items: center; 
 }
 
 .footer-section ul li img {
-    margin-right: 10px; /* Espaço entre ícone e texto */
+    margin-right: 10px; 
 }
 
 .footer-section ul li a {
+    
     text-decoration: none;
     color: #000;
 }
