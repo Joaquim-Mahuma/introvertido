@@ -296,8 +296,8 @@ header {
     filter: grayscale(100%);
     border: 1px solid black;
 
+
     width: 100%;
-    
 }
 
 aside {
@@ -410,8 +410,11 @@ h3 {
     font-weight: bold;
 }
 
-i {
+.resposta {
     font-weight: 500;
+    border-left: 1px solid black;
+
+    margin-left: 10px;
 }
 
 footer {
